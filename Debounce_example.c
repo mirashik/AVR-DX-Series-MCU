@@ -1,6 +1,6 @@
 static void init_pushButton() // pc1 push button > turns on pd3 led
  {	  
-    PORTC.DIR &= ~(PIN1_bm);	  PORTC.PIN1CTRL |= PORT_PULLUPEN_bm; // pc7 as push button to be debounced with timer B1 one shot 10ms delay
+          PORTC.DIR &= ~(PIN1_bm);	  PORTC.PIN1CTRL |= PORT_PULLUPEN_bm; // pc7 as push button to be debounced with timer B1 one shot 10ms delay
 	  
 	  PORTD.DIR |= PIN3_bm; PORTD.OUT |= PIN3_bm; // pd3 as Led output
 	  
